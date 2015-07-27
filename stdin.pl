@@ -1,8 +1,9 @@
-#! /usr/bin/perl -w
+#! /usr/bin/perl -w              # executes the Perl interpreter
 
-$foo = <STDIN>;
-if (defined($foo)) {
-    print "Data $foo exist\n";
-} else {
+my $foo = <STDIN>;               # <STDIN> stands for standard input
+
+if (defined($foo)) {             # if - conditional statement
+    print "Data $foo exist\n";   # the simplest sort of print
+} else {                         # else statement is a compliment to an if statement
     print "Not exit\n";
-};
+};                               # end of conditional statement
