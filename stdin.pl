@@ -1,10 +1,10 @@
 #! /usr/bin/perl                 # executes the Perl interpreter
 
 use strict;
-use warnings;
+use warnings;                    # compiler flags
 
 my $foo = <STDIN>;               # <STDIN> stands for standard input
-my $bar = chomp( $foo );
+my $bar = chomp( $foo );         # chomp - removes "\n"
 
 if ( defined( $bar ) ) {         # if - conditional statement, if (EXPR) BLOCK else BLOCK
     print "Data $foo exist\n";   # the simplest sort of print
